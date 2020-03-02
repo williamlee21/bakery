@@ -1,0 +1,48 @@
+:root {
+  --light-blue: #99e3ec;
+  --light-purple: #e7c5f0;
+}
+
+.inner-container {
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 28px;
+}
+
+.text-container {
+  display: flex;
+}
+
+.left-container,
+.right-container {
+  flex: 1;
+  margin: 0 5% 40px;
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-around;
+}
+
+.fab {
+  color: var(--light-blue)
+}
+
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 300px;
+  width: 100%;
+}
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 300px;
+  width: 100%;
+}
+
+@media (max-width: 768px){
+  .text-container {
+    flex-direction: column;
+  }
+}

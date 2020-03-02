@@ -1,0 +1,35 @@
+.inner-container {
+  display: flex;
+}
+
+.left-container,
+.right-container {
+  flex: 1;
+  margin: 0 5% 40px;
+}
+
+.divider {
+  width: 10px;
+  margin: 2% 0;
+  border-left: 4px solid rgba(235, 178, 222, 1);
+  border-right: 2px solid rgba(235, 178, 222, 1);
+}
+
+.item-pricing span {
+  float: right;
+}
+
+@media (max-width: 768px) {
+  .inner-container {
+    flex-direction: column;
+  }
+
+  .divider {
+    height: 10px;
+    width: 90%;
+    margin: 0 auto;
+    border: none;
+    border-top: 4px solid rgba(235, 178, 222, 1);
+    border-bottom: 2px solid rgba(235, 178, 222, 1);
+  }
+}
